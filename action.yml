@@ -1,5 +1,8 @@
 name: 'IssueYAML'
 description: 'Create GitHub issues from a YAML Config'
+branding:
+  icon: 'alert-circle'
+  color: 'yellow'
 inputs:
   github-token:  # id of input
     description: 'Token to create issues outside the Action repo'
