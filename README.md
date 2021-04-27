@@ -4,7 +4,19 @@ An action to automatically create and bump issues.
 If the action sees a scheduled event or manual trigger it will run the bump logic. If it is triggered any other way, it will attempt to create any missing issues. 
 
 Note, this is a beta release. Its not very flexible.  PR's welcome 😁.
-
+## IssueYAML Syntax
+```yaml
+issues:
+  - title: Website out of date
+    nwo: rreichel3/rj3.me
+    labels:
+      - needs-update
+    boardURL: https://github.com/rreichel3/rj3.me/projects/1
+    body: |
+      I noticed there was drift from my list of projects, I need to add IssueYAML
+      ## Remediation Checklist
+      - [ ] Add IssueYAML to the README.md
+```
 ## Issue Creation Action
 ```yaml
 on:
